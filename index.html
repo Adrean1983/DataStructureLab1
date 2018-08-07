@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <section class="forminput">
+        <form>
+            <div>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="user_name" required>
+            </div>
+            <div>
+                <label for="mail">E-mail:</label>
+                <input type="email" id="mail" name="user_mail">   
+            </div>
+            <div>
+                <label for="msg">Explain the issue in 200 characters or less..</label>
+                <textarea id="boxtext" name="user_message" required></textarea>
+            </div> 
+            <div>  
+                <button type="button" onclick="this.form.timeField.value=getTimeStamp()" required>Get time stamp</button>
+                <input type="text" name="timeField" size="17"  required id="timestamp" placeholder="only works with name field">
+                <span>*required</span>
+            </div>
+            <div> 
+                <button type="submit" id="formsubmit" onclick="pushData()">Submit</button>
+            </div>
+        </form>      
+    </section>
+    <section class="container2">
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="scripts/script.js"></script>
+</body>
+</html>
